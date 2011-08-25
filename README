@@ -1,0 +1,10 @@
+NAME
+  coerce
+
+DESCRIPTION
+  a ruby library full of common cast/coercion operations
+
+INSTALL
+  gem install coerce
+
+USAGE
