@@ -9,7 +9,7 @@ Gem::Specification::new do |spec|
   spec.description = "description: coerce kicks the ass"
 
   spec.files =
-["Rakefile", "lib", "lib/coerce.rb"]
+["README", "Rakefile", "coerce.gemspec", "lib", "lib/coerce.rb"]
 
   spec.executables = []
   
@@ -17,8 +17,9 @@ Gem::Specification::new do |spec|
 
   spec.test_files = nil
 
-### spec.add_dependency 'lib', '>= version'
-#### spec.add_dependency 'map'
+  
+    spec.add_dependency(*["chronic", "~> 0.6.2"])
+  
 
   spec.extensions.push(*[])
 
