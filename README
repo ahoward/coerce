@@ -8,3 +8,21 @@ INSTALL
   gem install coerce
 
 USAGE
+
+  :~/git/coerce $ irb -r lib/coerce.rb 
+
+  ruby-1.8.7-p330 :001 > Coerce.integer('42')
+   => 42
+
+  ruby-1.8.7-p330 :002 > Coerce.number('42.0')
+   => 42.0 
+
+  ruby-1.8.7-p330 :003 > Coerce.time('yesterday')
+   => Wed Aug 24 12:00:00 -0600 2011 
+
+  ruby-1.8.7-p330 :004 > Coerce.list_of_times('yesterday, today')
+   => [Wed Aug 24 12:00:00 -0600 2011, Thu Aug 25 19:30:00 -0600 2011] 
+
+  ruby-1.8.7-p330 :005 > Coerce.list_of_floats("42, 4.2\n\n 420")
+   => [42.0, 4.2, 420.0] 
+  
