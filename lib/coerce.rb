@@ -9,7 +9,7 @@ module Coerce
 
 ## version
 #
-  Coerce::Version = '0.0.2'
+  Coerce::Version = '0.0.3'
 
   def self.version
     Coerce::Version
@@ -53,9 +53,9 @@ module Coerce
 
   coerce :boolean do |obj|
     case obj.to_s
-      when %r/^(true|t|1)$/ 
+      when %r/^(true|t|1|yes|y)$/i
         true
-      when %r/^(false|f|0)$/ 
+      when %r/^(false|f|0|no|n)$/i
         false
       else
         !!obj
