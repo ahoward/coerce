@@ -9,7 +9,7 @@ module Coerce
 
 ## version
 #
-  Coerce::Version = '0.0.3'
+  Coerce::Version = '0.0.4'
 
   def self.version
     Coerce::Version
@@ -19,7 +19,7 @@ module Coerce
 #
   def self.dependencies
     {
-      'chronic'   =>  [ 'chronic'   , '~> 0.6.2' ]
+      'chronic'   =>  [ 'chronic'   , '>= 0.6.2' ]
     }
   end
 

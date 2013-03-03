@@ -3,7 +3,7 @@
 
 Gem::Specification::new do |spec|
   spec.name = "coerce"
-  spec.version = "0.0.3"
+  spec.version = "0.0.4"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "coerce"
   spec.description = "description: coerce kicks the ass"
@@ -18,7 +18,7 @@ Gem::Specification::new do |spec|
   spec.test_files = nil
 
   
-    spec.add_dependency(*["chronic", "~> 0.6.2"])
+    spec.add_dependency(*["chronic", ">= 0.6.2"])
   
 
   spec.extensions.push(*[])
