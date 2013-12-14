@@ -9,7 +9,7 @@ module Coerce
 
 ## version
 #
-  Coerce::Version = '1.0.0'
+  Coerce::Version = '0.0.5'
 
   def self.version
     Coerce::Version
