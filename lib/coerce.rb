@@ -9,7 +9,7 @@ module Coerce
 
 ## version
 #
-  Coerce::Version = '0.0.4'
+  Coerce::Version = '1.0.0'
 
   def self.version
     Coerce::Version
@@ -146,6 +146,22 @@ module Coerce
 
   coerce :list do |*objs|
     [*objs].flatten.join(',').split(/[\n,]/).map{|item| item.strip}.delete_if{|item| item.strip.empty?}
+  end
+
+  coerce :array do |*objs|
+    [*objs].flatten.join(',').split(/[\n,]/).map{|item| item.strip}.delete_if{|item| item.strip.empty?}
+  end
+
+  coerce :hash do |*objs|
+    list = Coerce.list(*objs)
+    hash = Hash.new
+    list.each do |pair|
+      k, v = pair.split(/[=:]+/, 2)
+      key = k.to_s.strip
+      val = v.to_s.strip
+      hash[key] = val
+    end
+    hash
   end
 
 # add list_of_xxx methods

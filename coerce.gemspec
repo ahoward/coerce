@@ -3,10 +3,11 @@
 
 Gem::Specification::new do |spec|
   spec.name = "coerce"
-  spec.version = "0.0.4"
+  spec.version = "1.0.0"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "coerce"
   spec.description = "description: coerce kicks the ass"
+  spec.license = "same as ruby's"
 
   spec.files =
 ["README", "Rakefile", "coerce.gemspec", "lib", "lib/coerce.rb"]
