@@ -6,7 +6,7 @@ Gem::Specification::new do |spec|
   spec.version = "0.0.6"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "coerce"
-  spec.description = "description: coerce kicks the ass"
+  spec.description = "a ruby library full of common cast/coercion operations"
   spec.license = "same as ruby's"
 
   spec.files =
