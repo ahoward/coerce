@@ -3,7 +3,7 @@
 
 Gem::Specification::new do |spec|
   spec.name = "coerce"
-  spec.version = "0.0.6"
+  spec.version = "1.0.0"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "coerce"
   spec.description = "description: coerce kicks the ass"
